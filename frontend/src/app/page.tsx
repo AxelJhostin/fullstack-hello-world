@@ -9,7 +9,7 @@ export default function Home() {
 
   useEffect(() => {
     // Hacemos la llamada a nuestra API de FastAPI que está corriendo localmente
-    fetch('http://127.0.0.1:8000/api/message')
+    fetch('https://fullstack-hello-world-backend.onrender.com/api/message')
       .then((res) => res.json())
       .then((data) => {
         // Guardamos el mensaje en nuestro estado
